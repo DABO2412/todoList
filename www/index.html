@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="lib/themes/todolist.min.css">
+    <link rel="stylesheet" href="lib/themes/jquery.mobile.icons.min.css">
+    <link rel="stylesheet" href="lib/jquery.mobile.structure-1.4.5.min.css">
+    <!--<link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css">-->
+    <link rel="stylesheet" href="css/index.css">
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div data-role="page" data-theme="a">
+        <div data-role="header">
+            <h1>ToDo List</h1>
+        </div>
+        <div role="main" class="ui-content" >
+            <form>
+                <label for="task">Add a task</label>
+                <input type="text" id="task" placeholder="New task">
+                <input type="button" value="add" onclick="addTask()">
+                <input type="button" value="Reset" onclick="reinitialiser()">
+            </form>
+
+            <div data-role="header">
+                <h1>In Progress</h1>
+            </div>
+
+            <ul id="taskList" data-role="listview" data-inset="true">
+                
+            </ul>
+
+            <div data-role="header">
+                <h1>Tasks Completed</h1>
+            </div>
+
+            <ul id="completedTaskList" data-role="listview" data-inset="true">
+             
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>DABO Mame Coumba &copy;2024</h1>
+        </div>
+    </div>
+
+</body>
+</html>

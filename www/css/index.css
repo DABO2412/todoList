@@ -1,0 +1,16 @@
+label{
+   color: grey;
+}
+.termine{
+   text-decoration: line-through;
+}
+
+label, input[type=text]{
+   text-align: center; 
+
+}
+
+
+.ui-content div[data-role=header]{
+   border-radius: 25px;
+}
